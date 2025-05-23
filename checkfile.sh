@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ -z "$1" ]; then
+if [[ -z "$1" ]]; then
    echo "usage: $0 <filename>"
    exit 1
 fi
 
-if [ -f "$1" ]; then
+if [[ -f "$1" ]]; then
    echo "File $1 exists."
 else
    echo "File $1 does not exist."
